@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43C572EE2B279B8900ACF146 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C572ED2B279B8900ACF146 /* LoginScreen.swift */; };
+		43C572F02B279BC500ACF146 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C572EF2B279BC500ACF146 /* LaunchScreen.swift */; };
+		43DF18402B2788CD00C4783A /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DF183F2B2788CD00C4783A /* LaunchViewController.swift */; };
 		43DFD61E2B27816800AB76BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DFD61D2B27816800AB76BF /* AppDelegate.swift */; };
 		43DFD6202B27816800AB76BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DFD61F2B27816800AB76BF /* SceneDelegate.swift */; };
-		43DFD6222B27816800AB76BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DFD6212B27816800AB76BF /* ViewController.swift */; };
-		43DFD6252B27816800AB76BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43DFD6232B27816800AB76BF /* Main.storyboard */; };
+		43DFD6222B27816800AB76BF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DFD6212B27816800AB76BF /* LoginViewController.swift */; };
 		43DFD6282B27816800AB76BF /* Bank_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 43DFD6262B27816800AB76BF /* Bank_app.xcdatamodeld */; };
 		43DFD62A2B27816A00AB76BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43DFD6292B27816A00AB76BF /* Assets.xcassets */; };
-		43DFD62D2B27816A00AB76BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43DFD62B2B27816A00AB76BF /* LaunchScreen.storyboard */; };
 		43DFD6382B27816A00AB76BF /* Bank_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DFD6372B27816A00AB76BF /* Bank_appTests.swift */; };
 		43DFD6422B27816A00AB76BF /* Bank_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DFD6412B27816A00AB76BF /* Bank_appUITests.swift */; };
 		43DFD6442B27816A00AB76BF /* Bank_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DFD6432B27816A00AB76BF /* Bank_appUITestsLaunchTests.swift */; };
@@ -37,14 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43C572ED2B279B8900ACF146 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		43C572EF2B279BC500ACF146 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		43DF183F2B2788CD00C4783A /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		43DFD61A2B27816800AB76BF /* Bank-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bank-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43DFD61D2B27816800AB76BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43DFD61F2B27816800AB76BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		43DFD6212B27816800AB76BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		43DFD6242B27816800AB76BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43DFD6212B27816800AB76BF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		43DFD6272B27816800AB76BF /* Bank_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bank_app.xcdatamodel; sourceTree = "<group>"; };
 		43DFD6292B27816A00AB76BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		43DFD62C2B27816A00AB76BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43DFD62E2B27816A00AB76BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43DFD6332B27816A00AB76BF /* Bank-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bank-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43DFD6372B27816A00AB76BF /* Bank_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank_appTests.swift; sourceTree = "<group>"; };
@@ -78,6 +80,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43C572EC2B279B2900ACF146 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				43DFD6212B27816800AB76BF /* LoginViewController.swift */,
+				43C572ED2B279B8900ACF146 /* LoginScreen.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		43C572F12B27AB7A00ACF146 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		43DF183E2B2788C100C4783A /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				43DF183F2B2788CD00C4783A /* LaunchViewController.swift */,
+				43C572EF2B279BC500ACF146 /* LaunchScreen.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
 		43DFD6112B27816800AB76BF = {
 			isa = PBXGroup;
 			children = (
@@ -101,12 +128,12 @@
 		43DFD61C2B27816800AB76BF /* Bank-app */ = {
 			isa = PBXGroup;
 			children = (
+				43C572F12B27AB7A00ACF146 /* Components */,
+				43DF183E2B2788C100C4783A /* Launch */,
+				43C572EC2B279B2900ACF146 /* Login */,
 				43DFD61D2B27816800AB76BF /* AppDelegate.swift */,
 				43DFD61F2B27816800AB76BF /* SceneDelegate.swift */,
-				43DFD6212B27816800AB76BF /* ViewController.swift */,
-				43DFD6232B27816800AB76BF /* Main.storyboard */,
 				43DFD6292B27816A00AB76BF /* Assets.xcassets */,
-				43DFD62B2B27816A00AB76BF /* LaunchScreen.storyboard */,
 				43DFD62E2B27816A00AB76BF /* Info.plist */,
 				43DFD6262B27816800AB76BF /* Bank_app.xcdatamodeld */,
 			);
@@ -234,9 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43DFD62D2B27816A00AB76BF /* LaunchScreen.storyboard in Resources */,
 				43DFD62A2B27816A00AB76BF /* Assets.xcassets in Resources */,
-				43DFD6252B27816800AB76BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43DFD6222B27816800AB76BF /* ViewController.swift in Sources */,
+				43C572F02B279BC500ACF146 /* LaunchScreen.swift in Sources */,
+				43DFD6222B27816800AB76BF /* LoginViewController.swift in Sources */,
+				43DF18402B2788CD00C4783A /* LaunchViewController.swift in Sources */,
 				43DFD6282B27816800AB76BF /* Bank_app.xcdatamodeld in Sources */,
 				43DFD61E2B27816800AB76BF /* AppDelegate.swift in Sources */,
 				43DFD6202B27816800AB76BF /* SceneDelegate.swift in Sources */,
+				43C572EE2B279B8900ACF146 /* LoginScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,25 +327,6 @@
 			targetProxy = 43DFD63E2B27816A00AB76BF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		43DFD6232B27816800AB76BF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				43DFD6242B27816800AB76BF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		43DFD62B2B27816A00AB76BF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				43DFD62C2B27816A00AB76BF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		43DFD6452B27816A00AB76BF /* Debug */ = {
@@ -446,7 +455,6 @@
 				INFOPLIST_FILE = "Bank-app/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,7 +482,6 @@
 				INFOPLIST_FILE = "Bank-app/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

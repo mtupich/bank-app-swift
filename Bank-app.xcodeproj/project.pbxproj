@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43777A1C2B2B49DA007DD869 /* TextfieldBorderBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43777A1B2B2B49DA007DD869 /* TextfieldBorderBottomView.swift */; };
 		43C572EE2B279B8900ACF146 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C572ED2B279B8900ACF146 /* LoginScreen.swift */; };
 		43C572F02B279BC500ACF146 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C572EF2B279BC500ACF146 /* LaunchScreen.swift */; };
 		43DF18402B2788CD00C4783A /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DF183F2B2788CD00C4783A /* LaunchViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43777A1B2B2B49DA007DD869 /* TextfieldBorderBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldBorderBottomView.swift; sourceTree = "<group>"; };
 		43C572ED2B279B8900ACF146 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		43C572EF2B279BC500ACF146 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		43DF183F2B2788CD00C4783A /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		43C572F12B27AB7A00ACF146 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				43777A1B2B2B49DA007DD869 /* TextfieldBorderBottomView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43C572F02B279BC500ACF146 /* LaunchScreen.swift in Sources */,
+				43777A1C2B2B49DA007DD869 /* TextfieldBorderBottomView.swift in Sources */,
 				43DFD6222B27816800AB76BF /* LoginViewController.swift in Sources */,
 				43DF18402B2788CD00C4783A /* LaunchViewController.swift in Sources */,
 				43DFD6282B27816800AB76BF /* Bank_app.xcdatamodeld in Sources */,

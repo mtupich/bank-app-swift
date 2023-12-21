@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		433711182B30C0770079D3AE /* LoginScreenProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433711172B30C0770079D3AE /* LoginScreenProtocol.swift */; };
+		4337111B2B31DA6D0079D3AE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4337111A2B31DA6D0079D3AE /* HomeViewController.swift */; };
+		4337111D2B31DA840079D3AE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4337111C2B31DA840079D3AE /* HomeScreen.swift */; };
+		433711202B3313ED0079D3AE /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4337111F2B3313ED0079D3AE /* BalanceView.swift */; };
+		433711222B3314010079D3AE /* UserHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433711212B3314010079D3AE /* UserHeaderView.swift */; };
+		433711242B335CEA0079D3AE /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433711232B335CEA0079D3AE /* BannerView.swift */; };
+		433711272B337A540079D3AE /* BankFunctionalitiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433711262B337A540079D3AE /* BankFunctionalitiesCollectionViewCell.swift */; };
 		43777A1C2B2B49DA007DD869 /* TextfieldBorderBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43777A1B2B2B49DA007DD869 /* TextfieldBorderBottomView.swift */; };
 		43C572EE2B279B8900ACF146 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C572ED2B279B8900ACF146 /* LoginScreen.swift */; };
 		43C572F02B279BC500ACF146 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C572EF2B279BC500ACF146 /* LaunchScreen.swift */; };
@@ -39,6 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		433711172B30C0770079D3AE /* LoginScreenProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenProtocol.swift; sourceTree = "<group>"; };
+		4337111A2B31DA6D0079D3AE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4337111C2B31DA840079D3AE /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		4337111F2B3313ED0079D3AE /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
+		433711212B3314010079D3AE /* UserHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeaderView.swift; sourceTree = "<group>"; };
+		433711232B335CEA0079D3AE /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		433711262B337A540079D3AE /* BankFunctionalitiesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankFunctionalitiesCollectionViewCell.swift; sourceTree = "<group>"; };
 		43777A1B2B2B49DA007DD869 /* TextfieldBorderBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldBorderBottomView.swift; sourceTree = "<group>"; };
 		43C572ED2B279B8900ACF146 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		43C572EF2B279BC500ACF146 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
@@ -82,11 +96,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		433711192B31DA530079D3AE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				433711252B337A030079D3AE /* BankFunctionalitiesCell */,
+				4337111A2B31DA6D0079D3AE /* HomeViewController.swift */,
+				4337111C2B31DA840079D3AE /* HomeScreen.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4337111E2B3313D70079D3AE /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				43777A1B2B2B49DA007DD869 /* TextfieldBorderBottomView.swift */,
+				4337111F2B3313ED0079D3AE /* BalanceView.swift */,
+				433711212B3314010079D3AE /* UserHeaderView.swift */,
+				433711232B335CEA0079D3AE /* BannerView.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		433711252B337A030079D3AE /* BankFunctionalitiesCell */ = {
+			isa = PBXGroup;
+			children = (
+				433711262B337A540079D3AE /* BankFunctionalitiesCollectionViewCell.swift */,
+			);
+			path = BankFunctionalitiesCell;
+			sourceTree = "<group>";
+		};
 		43C572EC2B279B2900ACF146 /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				43DFD6212B27816800AB76BF /* LoginViewController.swift */,
 				43C572ED2B279B8900ACF146 /* LoginScreen.swift */,
+				433711172B30C0770079D3AE /* LoginScreenProtocol.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -94,7 +138,7 @@
 		43C572F12B27AB7A00ACF146 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				43777A1B2B2B49DA007DD869 /* TextfieldBorderBottomView.swift */,
+				4337111E2B3313D70079D3AE /* UIView */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -131,6 +175,7 @@
 		43DFD61C2B27816800AB76BF /* Bank-app */ = {
 			isa = PBXGroup;
 			children = (
+				433711192B31DA530079D3AE /* Home */,
 				43C572F12B27AB7A00ACF146 /* Components */,
 				43DF183E2B2788C100C4783A /* Launch */,
 				43C572EC2B279B2900ACF146 /* Login */,
@@ -289,13 +334,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				433711242B335CEA0079D3AE /* BannerView.swift in Sources */,
+				433711182B30C0770079D3AE /* LoginScreenProtocol.swift in Sources */,
+				433711222B3314010079D3AE /* UserHeaderView.swift in Sources */,
 				43C572F02B279BC500ACF146 /* LaunchScreen.swift in Sources */,
 				43777A1C2B2B49DA007DD869 /* TextfieldBorderBottomView.swift in Sources */,
 				43DFD6222B27816800AB76BF /* LoginViewController.swift in Sources */,
+				4337111D2B31DA840079D3AE /* HomeScreen.swift in Sources */,
 				43DF18402B2788CD00C4783A /* LaunchViewController.swift in Sources */,
+				4337111B2B31DA6D0079D3AE /* HomeViewController.swift in Sources */,
 				43DFD6282B27816800AB76BF /* Bank_app.xcdatamodeld in Sources */,
 				43DFD61E2B27816800AB76BF /* AppDelegate.swift in Sources */,
+				433711202B3313ED0079D3AE /* BalanceView.swift in Sources */,
 				43DFD6202B27816800AB76BF /* SceneDelegate.swift in Sources */,
+				433711272B337A540079D3AE /* BankFunctionalitiesCollectionViewCell.swift in Sources */,
 				43C572EE2B279B8900ACF146 /* LoginScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

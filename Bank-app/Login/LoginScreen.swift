@@ -8,10 +8,8 @@
 import Foundation
 import UIKit
 
-import UIKit
-
 class LoginScreen: UIView {
-
+    
     lazy var bg: UIImageView = {
        let bg = UIImageView()
         bg.image = UIImage(named: "bg")
@@ -61,9 +59,9 @@ class LoginScreen: UIView {
        btn.layer.cornerRadius = 8
        btn.layer.borderColor = UIColor.white.cgColor
        btn.layer.borderWidth = 1
+       btn.addTarget(self, action: #selector(self.didTapEnter), for: .touchUpInside)
        return btn
     }()
-    
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -74,14 +72,18 @@ class LoginScreen: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    @objc func didTapEnter() {
+        print("passei aqui 2")
+    }
 
     func addSubviews() {
-        self.addSubview(self.bg)
-        bg.addSubview(loginContainer)
-        loginContainer.addSubview(title)
-        loginContainer.addSubview(credentialView)
-        loginContainer.addSubview(passwordView)
-        loginContainer.addSubview(loginBtn)
+        addSubview(bg)
+        addSubview(loginContainer)
+        addSubview(title)
+        addSubview(credentialView)
+        addSubview(passwordView)
+        addSubview(loginBtn)
     }
 
     func setUpConstraints() {
@@ -107,7 +109,6 @@ class LoginScreen: UIView {
             passwordView.leftAnchor.constraint(equalTo: loginContainer.leftAnchor, constant: 24),
             passwordView.rightAnchor.constraint(equalTo: loginContainer.rightAnchor, constant: -24),
 
-//            loginBtn.centerXAnchor.constraint(equalTo: loginContainer.centerXAnchor),
             loginBtn.leftAnchor.constraint(equalTo: loginContainer.leftAnchor, constant: 24),
             loginBtn.rightAnchor.constraint(equalTo: loginContainer.rightAnchor, constant: -24),
             loginBtn.bottomAnchor.constraint(equalTo: loginContainer.bottomAnchor, constant: -24),

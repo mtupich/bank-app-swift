@@ -19,7 +19,6 @@ class TextfieldBorderBottomView: UIView {
     lazy var title: UILabel = {
         let title = UILabel()
         title.translatesAutoresizingMaskIntoConstraints = false
-        title.text = "SENHA"
         title.textColor = .white
         title.font = UIFont.boldSystemFont(ofSize: 10)
         return title
@@ -28,7 +27,6 @@ class TextfieldBorderBottomView: UIView {
     lazy var placeholder: UITextField = {
        let tf = UITextField()
        tf.translatesAutoresizingMaskIntoConstraints = false
-       tf.placeholder = "SENHA"
        return tf
     }()
     
@@ -52,16 +50,16 @@ class TextfieldBorderBottomView: UIView {
 
     func addSubviews() {
         addSubview(container)
-        container.addSubview(title)
-        container.addSubview(placeholder)
-        container.addSubview(border)
+        addSubview(title)
+        addSubview(placeholder)
+        addSubview(border)
     }
 
     func setUpConstraints() {
         NSLayoutConstraint.activate([
-            container.topAnchor.constraint(equalTo: self.topAnchor),
-            container.leftAnchor.constraint(equalTo: self.leftAnchor),
-            container.rightAnchor.constraint(equalTo: self.rightAnchor),
+            container.topAnchor.constraint(equalTo: topAnchor),
+            container.leftAnchor.constraint(equalTo: leftAnchor),
+            container.rightAnchor.constraint(equalTo: rightAnchor),
             container.heightAnchor.constraint(equalToConstant: 50),
             
             title.topAnchor.constraint(equalTo: container.topAnchor),

@@ -19,7 +19,7 @@ class BannerView: UIView {
     
     lazy var titleLbl: UILabel = {
         let lbl = UILabel()
-        lbl.text = "Indique e ganhe"
+        lbl.text = "Indique e ganhe!"
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.numberOfLines = 0
         lbl.textColor = .white
@@ -77,7 +77,8 @@ class BannerView: UIView {
             bannerContainer.topAnchor.constraint(equalTo: topAnchor),
             bannerContainer.leftAnchor.constraint(equalTo: leftAnchor),
             bannerContainer.rightAnchor.constraint(equalTo: rightAnchor),
-            bannerContainer.heightAnchor.constraint(equalToConstant: 120),
+//            bannerContainer.heightAnchor.constraint(equalToConstant: 120),
+            bannerContainer.bottomAnchor.constraint(equalTo: bottomAnchor),
             
             stack.centerYAnchor.constraint(equalTo: bannerContainer.centerYAnchor),
             stack.leftAnchor.constraint(equalTo: bannerContainer.leftAnchor, constant: 24),

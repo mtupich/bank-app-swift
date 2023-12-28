@@ -20,13 +20,23 @@ class BankFunctionalitiesCollectionViewCell: UICollectionViewCell {
     
     lazy var button: UIButton = {
        let btn = UIButton()
-        btn.setImage(UIImage(named: ""), for: .normal)
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.setImage(UIImage(named: "pix-icon"), for: .normal)
        return btn
+    }()
+    
+    lazy var title: UILabel = {
+       let title = UILabel()
+       title.translatesAutoresizingMaskIntoConstraints = false
+       title.textColor = .white
+       title.font = .systemFont(ofSize: 10)
+       return title
     }()
     
     override init(frame: CGRect) {
       super.init(frame: frame)
-      
+        buildViewHierarchy()
+        setupConstraints()
     }
 
     @available(*, unavailable)
@@ -35,11 +45,24 @@ class BankFunctionalitiesCollectionViewCell: UICollectionViewCell {
     }
     
     func buildViewHierarchy() {
-        
+        addSubview(containerView)
+        addSubview(title)
+        containerView.addSubview(button)
     }
     
     func setupConstraints() {
-        
+        NSLayoutConstraint.activate([
+            containerView.topAnchor.constraint(equalTo: topAnchor),
+            containerView.leftAnchor.constraint(equalTo: leftAnchor),
+            containerView.rightAnchor.constraint(equalTo: rightAnchor),
+            containerView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            
+            button.centerYAnchor.constraint(equalTo: containerView.centerYAnchor),
+            button.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
+            
+            title.topAnchor.constraint(equalTo: containerView.bottomAnchor),
+            title.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
+        ])
     }
     
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		430ABA812B3DF6350048A7A0 /* BankFunctionalitiesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430ABA802B3DF6350048A7A0 /* BankFunctionalitiesEnum.swift */; };
 		433711182B30C0770079D3AE /* LoginScreenProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433711172B30C0770079D3AE /* LoginScreenProtocol.swift */; };
 		4337111B2B31DA6D0079D3AE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4337111A2B31DA6D0079D3AE /* HomeViewController.swift */; };
 		4337111D2B31DA840079D3AE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4337111C2B31DA840079D3AE /* HomeScreen.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		430ABA802B3DF6350048A7A0 /* BankFunctionalitiesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankFunctionalitiesEnum.swift; sourceTree = "<group>"; };
 		433711172B30C0770079D3AE /* LoginScreenProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenProtocol.swift; sourceTree = "<group>"; };
 		4337111A2B31DA6D0079D3AE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4337111C2B31DA840079D3AE /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -96,9 +98,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		430ABA7F2B3DF60C0048A7A0 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				430ABA802B3DF6350048A7A0 /* BankFunctionalitiesEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		433711192B31DA530079D3AE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				43C572F12B27AB7A00ACF146 /* Components */,
 				433711252B337A030079D3AE /* BankFunctionalitiesCell */,
 				4337111A2B31DA6D0079D3AE /* HomeViewController.swift */,
 				4337111C2B31DA840079D3AE /* HomeScreen.swift */,
@@ -138,6 +149,7 @@
 		43C572F12B27AB7A00ACF146 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				430ABA7F2B3DF60C0048A7A0 /* Enums */,
 				4337111E2B3313D70079D3AE /* UIView */,
 			);
 			path = Components;
@@ -176,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				433711192B31DA530079D3AE /* Home */,
-				43C572F12B27AB7A00ACF146 /* Components */,
 				43DF183E2B2788C100C4783A /* Launch */,
 				43C572EC2B279B2900ACF146 /* Login */,
 				43DFD61D2B27816800AB76BF /* AppDelegate.swift */,
@@ -344,6 +355,7 @@
 				43DF18402B2788CD00C4783A /* LaunchViewController.swift in Sources */,
 				4337111B2B31DA6D0079D3AE /* HomeViewController.swift in Sources */,
 				43DFD6282B27816800AB76BF /* Bank_app.xcdatamodeld in Sources */,
+				430ABA812B3DF6350048A7A0 /* BankFunctionalitiesEnum.swift in Sources */,
 				43DFD61E2B27816800AB76BF /* AppDelegate.swift in Sources */,
 				433711202B3313ED0079D3AE /* BalanceView.swift in Sources */,
 				43DFD6202B27816800AB76BF /* SceneDelegate.swift in Sources */,

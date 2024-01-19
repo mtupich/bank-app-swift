@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		430ABA812B3DF6350048A7A0 /* BankFunctionalitiesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430ABA802B3DF6350048A7A0 /* BankFunctionalitiesEnum.swift */; };
+		430ABA842B3E0C0E0048A7A0 /* MoreFunctionalitiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430ABA832B3E0C0E0048A7A0 /* MoreFunctionalitiesCell.swift */; };
+		430ABA862B3E12EF0048A7A0 /* HomeBlockIdentifierEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430ABA852B3E12EF0048A7A0 /* HomeBlockIdentifierEnum.swift */; };
+		430ABA882B3E170C0048A7A0 /* MoreFunctionalitiesEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430ABA872B3E170C0048A7A0 /* MoreFunctionalitiesEnum.swift */; };
+		430ABA8B2B3F07CB0048A7A0 /* MenuTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430ABA8A2B3F07CB0048A7A0 /* MenuTabBar.swift */; };
 		433711182B30C0770079D3AE /* LoginScreenProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433711172B30C0770079D3AE /* LoginScreenProtocol.swift */; };
 		4337111B2B31DA6D0079D3AE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4337111A2B31DA6D0079D3AE /* HomeViewController.swift */; };
 		4337111D2B31DA840079D3AE /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4337111C2B31DA840079D3AE /* HomeScreen.swift */; };
@@ -16,6 +20,7 @@
 		433711242B335CEA0079D3AE /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433711232B335CEA0079D3AE /* BannerView.swift */; };
 		433711272B337A540079D3AE /* BankFunctionalitiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433711262B337A540079D3AE /* BankFunctionalitiesCollectionViewCell.swift */; };
 		43777A1C2B2B49DA007DD869 /* TextfieldBorderBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43777A1B2B2B49DA007DD869 /* TextfieldBorderBottomView.swift */; };
+		43B6C9BE2B444DD0000AAB27 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6C9BD2B444DD0000AAB27 /* CustomTabBarView.swift */; };
 		43C572EE2B279B8900ACF146 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C572ED2B279B8900ACF146 /* LoginScreen.swift */; };
 		43C572F02B279BC500ACF146 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C572EF2B279BC500ACF146 /* LaunchScreen.swift */; };
 		43DF18402B2788CD00C4783A /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DF183F2B2788CD00C4783A /* LaunchViewController.swift */; };
@@ -48,6 +53,10 @@
 
 /* Begin PBXFileReference section */
 		430ABA802B3DF6350048A7A0 /* BankFunctionalitiesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankFunctionalitiesEnum.swift; sourceTree = "<group>"; };
+		430ABA832B3E0C0E0048A7A0 /* MoreFunctionalitiesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreFunctionalitiesCell.swift; sourceTree = "<group>"; };
+		430ABA852B3E12EF0048A7A0 /* HomeBlockIdentifierEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBlockIdentifierEnum.swift; sourceTree = "<group>"; };
+		430ABA872B3E170C0048A7A0 /* MoreFunctionalitiesEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreFunctionalitiesEnum.swift; sourceTree = "<group>"; };
+		430ABA8A2B3F07CB0048A7A0 /* MenuTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBar.swift; sourceTree = "<group>"; };
 		433711172B30C0770079D3AE /* LoginScreenProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenProtocol.swift; sourceTree = "<group>"; };
 		4337111A2B31DA6D0079D3AE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4337111C2B31DA840079D3AE /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -56,6 +65,7 @@
 		433711232B335CEA0079D3AE /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		433711262B337A540079D3AE /* BankFunctionalitiesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankFunctionalitiesCollectionViewCell.swift; sourceTree = "<group>"; };
 		43777A1B2B2B49DA007DD869 /* TextfieldBorderBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldBorderBottomView.swift; sourceTree = "<group>"; };
+		43B6C9BD2B444DD0000AAB27 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
 		43C572ED2B279B8900ACF146 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		43C572EF2B279BC500ACF146 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		43DF183F2B2788CD00C4783A /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
@@ -102,17 +112,35 @@
 			isa = PBXGroup;
 			children = (
 				430ABA802B3DF6350048A7A0 /* BankFunctionalitiesEnum.swift */,
+				430ABA852B3E12EF0048A7A0 /* HomeBlockIdentifierEnum.swift */,
+				430ABA872B3E170C0048A7A0 /* MoreFunctionalitiesEnum.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		430ABA822B3E0BE10048A7A0 /* MoreFunctionalitiesCell */ = {
+			isa = PBXGroup;
+			children = (
+				430ABA832B3E0C0E0048A7A0 /* MoreFunctionalitiesCell.swift */,
+			);
+			path = MoreFunctionalitiesCell;
+			sourceTree = "<group>";
+		};
+		430ABA892B3F07A80048A7A0 /* MenuTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				430ABA8A2B3F07CB0048A7A0 /* MenuTabBar.swift */,
+			);
+			path = MenuTabBar;
 			sourceTree = "<group>";
 		};
 		433711192B31DA530079D3AE /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				43C572F12B27AB7A00ACF146 /* Components */,
-				433711252B337A030079D3AE /* BankFunctionalitiesCell */,
-				4337111A2B31DA6D0079D3AE /* HomeViewController.swift */,
 				4337111C2B31DA840079D3AE /* HomeScreen.swift */,
+				4337111A2B31DA6D0079D3AE /* HomeViewController.swift */,
+				430ABA822B3E0BE10048A7A0 /* MoreFunctionalitiesCell */,
+				433711252B337A030079D3AE /* BankFunctionalitiesCell */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -124,6 +152,7 @@
 				4337111F2B3313ED0079D3AE /* BalanceView.swift */,
 				433711212B3314010079D3AE /* UserHeaderView.swift */,
 				433711232B335CEA0079D3AE /* BannerView.swift */,
+				43B6C9BD2B444DD0000AAB27 /* CustomTabBarView.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -187,6 +216,8 @@
 		43DFD61C2B27816800AB76BF /* Bank-app */ = {
 			isa = PBXGroup;
 			children = (
+				430ABA892B3F07A80048A7A0 /* MenuTabBar */,
+				43C572F12B27AB7A00ACF146 /* Components */,
 				433711192B31DA530079D3AE /* Home */,
 				43DF183E2B2788C100C4783A /* Launch */,
 				43C572EC2B279B2900ACF146 /* Login */,
@@ -345,6 +376,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43B6C9BE2B444DD0000AAB27 /* CustomTabBarView.swift in Sources */,
+				430ABA842B3E0C0E0048A7A0 /* MoreFunctionalitiesCell.swift in Sources */,
 				433711242B335CEA0079D3AE /* BannerView.swift in Sources */,
 				433711182B30C0770079D3AE /* LoginScreenProtocol.swift in Sources */,
 				433711222B3314010079D3AE /* UserHeaderView.swift in Sources */,
@@ -358,7 +391,10 @@
 				430ABA812B3DF6350048A7A0 /* BankFunctionalitiesEnum.swift in Sources */,
 				43DFD61E2B27816800AB76BF /* AppDelegate.swift in Sources */,
 				433711202B3313ED0079D3AE /* BalanceView.swift in Sources */,
+				430ABA862B3E12EF0048A7A0 /* HomeBlockIdentifierEnum.swift in Sources */,
 				43DFD6202B27816800AB76BF /* SceneDelegate.swift in Sources */,
+				430ABA8B2B3F07CB0048A7A0 /* MenuTabBar.swift in Sources */,
+				430ABA882B3E170C0048A7A0 /* MoreFunctionalitiesEnum.swift in Sources */,
 				433711272B337A540079D3AE /* BankFunctionalitiesCollectionViewCell.swift in Sources */,
 				43C572EE2B279B8900ACF146 /* LoginScreen.swift in Sources */,
 			);

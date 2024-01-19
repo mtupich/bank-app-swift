@@ -47,7 +47,6 @@ class BalanceView: UIView {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
         
-        // Set the image to "hide-icon" and tint it to white
         if let hideIconImage = UIImage(named: "hide-icon")?.withRenderingMode(.alwaysTemplate) {
             btn.setImage(hideIconImage, for: .normal)
             btn.tintColor = .white

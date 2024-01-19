@@ -18,7 +18,18 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginScreenView?.delegate = self
     }
+}
+
+extension LoginViewController: LoginScreenProtocol {
+    func didTapEnter() {
+        let navigation = UINavigationController(rootViewController: HomeViewController())
+        navigation.modalPresentationStyle = .overFullScreen
+        self.present(navigation, animated: true)
+    }
+    
+    
 }
 
 

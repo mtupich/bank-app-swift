@@ -10,6 +10,8 @@ import UIKit
 
 class LoginScreen: UIView {
     
+    weak var delegate: LoginScreenProtocol?
+    
     lazy var bg: UIImageView = {
        let bg = UIImageView()
         bg.image = UIImage(named: "bg")
@@ -75,6 +77,7 @@ class LoginScreen: UIView {
     
     @objc func didTapEnter() {
         print("passei aqui 2")
+        delegate?.didTapEnter()
     }
 
     func addSubviews() {
@@ -104,7 +107,7 @@ class LoginScreen: UIView {
             credentialView.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 20),
             credentialView.leftAnchor.constraint(equalTo: loginContainer.leftAnchor, constant: 24),
             credentialView.rightAnchor.constraint(equalTo: loginContainer.rightAnchor, constant: -24),
-            
+                
             passwordView.topAnchor.constraint(equalTo: credentialView.bottomAnchor, constant: 50),
             passwordView.leftAnchor.constraint(equalTo: loginContainer.leftAnchor, constant: 24),
             passwordView.rightAnchor.constraint(equalTo: loginContainer.rightAnchor, constant: -24),

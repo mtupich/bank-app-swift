@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     var loginScreenView: LoginScreen?
     
@@ -19,7 +19,14 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loginScreenView?.delegate = self
+        loginScreenView?.credentialView.placeholder.delegate = self
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+         // Esconde o teclado quando o botão return é pressionado
+         textField.resignFirstResponder()
+         return true
+     }
 }
 
 extension LoginViewController: LoginScreenProtocol {

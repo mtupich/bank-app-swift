@@ -13,20 +13,20 @@ class LoginScreen: UIView {
     weak var delegate: LoginScreenProtocol?
     
     lazy var bg: UIImageView = {
-       let bg = UIImageView()
+        let bg = UIImageView()
         bg.image = UIImage(named: "bg")
         bg.translatesAutoresizingMaskIntoConstraints = false
-       return bg
+        return bg
     }()
     
     lazy var loginContainer: UIView = {
-       let container = UIView()
-       container.translatesAutoresizingMaskIntoConstraints = false
-       container.backgroundColor = .clear
-       container.layer.cornerRadius = 8
-       container.layer.borderColor = UIColor.white.cgColor
-       container.layer.borderWidth = 1
-       return container
+        let container = UIView()
+        container.translatesAutoresizingMaskIntoConstraints = false
+        container.backgroundColor = .lightGray
+        container.layer.cornerRadius = 8
+        container.layer.borderColor = UIColor.lightGray.cgColor
+        container.layer.borderWidth = 1
+        return container
     }()
     
     lazy var title: UILabel = {
@@ -34,43 +34,50 @@ class LoginScreen: UIView {
         title.translatesAutoresizingMaskIntoConstraints = false
         title.text = "FAÇA SEU LOGIN"
         title.font = .systemFont(ofSize: 16, weight: .bold)
-        title.textColor = .white
         return title
     }()
- 
+    
     lazy var credentialView: TextfieldBorderBottomView = {
-       let tf = TextfieldBorderBottomView()
+        let tf = TextfieldBorderBottomView()
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.title.text = "CPF"
         tf.placeholder.placeholder = "CPF"
-       return tf
+        return tf
     }()
     
     lazy var passwordView: TextfieldBorderBottomView = {
-       let tf = TextfieldBorderBottomView()
+        let tf = TextfieldBorderBottomView()
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.title.text = "SENHA"
         tf.placeholder.placeholder = "SENHA"
-       return tf
+        return tf
     }()
     
     lazy var loginBtn: UIButton = {
-       let btn = UIButton()
-       btn.translatesAutoresizingMaskIntoConstraints = false
-       btn.setTitle("Entrar", for: .normal)
-       btn.layer.cornerRadius = 8
-       btn.layer.borderColor = UIColor.white.cgColor
-       btn.layer.borderWidth = 1
-       btn.addTarget(self, action: #selector(self.didTapEnter), for: .touchUpInside)
-       return btn
+        let btn = UIButton()
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.setTitle("Entrar", for: .normal)
+        btn.layer.cornerRadius = 8
+        btn.layer.borderColor = UIColor.white.cgColor
+        btn.layer.borderWidth = 1
+        btn.addTarget(self, action: #selector(self.didTapEnter), for: .touchUpInside)
+        return btn
     }()
-
+    
+    lazy var recoverPassBtn: UIButton = {
+        let btn = UIButton()
+        btn.setTitle("RECUPERAR SENHA", for: .normal)
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 10)
+        return btn
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubviews()
         setUpConstraints()
     }
-
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -79,16 +86,17 @@ class LoginScreen: UIView {
         print("passei aqui 2")
         delegate?.didTapEnter()
     }
-
+    
     func addSubviews() {
         addSubview(bg)
         addSubview(loginContainer)
         addSubview(title)
         addSubview(credentialView)
         addSubview(passwordView)
+        addSubview(recoverPassBtn)
         addSubview(loginBtn)
     }
-
+    
     func setUpConstraints() {
         NSLayoutConstraint.activate([
             bg.topAnchor.constraint(equalTo: topAnchor),
@@ -107,15 +115,22 @@ class LoginScreen: UIView {
             credentialView.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 20),
             credentialView.leftAnchor.constraint(equalTo: loginContainer.leftAnchor, constant: 24),
             credentialView.rightAnchor.constraint(equalTo: loginContainer.rightAnchor, constant: -24),
-                
-            passwordView.topAnchor.constraint(equalTo: credentialView.bottomAnchor, constant: 50),
+            credentialView.heightAnchor.constraint(equalToConstant: 34),
+
+            passwordView.topAnchor.constraint(equalTo: credentialView.bottomAnchor, constant: 10),
             passwordView.leftAnchor.constraint(equalTo: loginContainer.leftAnchor, constant: 24),
             passwordView.rightAnchor.constraint(equalTo: loginContainer.rightAnchor, constant: -24),
+            passwordView.bottomAnchor.constraint(equalTo: recoverPassBtn.topAnchor, constant: 0),
+            
+            recoverPassBtn.topAnchor.constraint(equalTo: passwordView.bottomAnchor, constant: 0),
+            recoverPassBtn.leftAnchor.constraint(equalTo: loginContainer.leftAnchor, constant: 24),
+            recoverPassBtn.bottomAnchor.constraint(equalTo: loginBtn.topAnchor, constant: -24),
 
+            loginBtn.topAnchor.constraint(equalTo: recoverPassBtn.bottomAnchor, constant: 24),
             loginBtn.leftAnchor.constraint(equalTo: loginContainer.leftAnchor, constant: 24),
             loginBtn.rightAnchor.constraint(equalTo: loginContainer.rightAnchor, constant: -24),
             loginBtn.bottomAnchor.constraint(equalTo: loginContainer.bottomAnchor, constant: -24),
         ])
     }
-
+    
 }
